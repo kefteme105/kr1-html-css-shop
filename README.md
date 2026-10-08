@@ -69,4 +69,4 @@
 
 ## Ссылка на опубликованный проект
 
-GitHub Pages: будет добавлена после публикации.
+GitHub Pages: https://kefteme105.github.io/kr1-html-css-shop/
