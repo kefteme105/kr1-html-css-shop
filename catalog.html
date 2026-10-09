@@ -44,8 +44,41 @@
       <p>Три демонстрационные карточки для отработки семантической разметки и единого оформления страниц.</p>
     </section>
 
-    <section class="section" aria-label="Товары каталога">
-      <div class="product-list">
+    <div class="section catalog-layout">
+      <aside class="catalog-filters" aria-labelledby="filters-title">
+        <p class="section__eyebrow">Параметры</p>
+        <h2 id="filters-title">Фильтры</h2>
+        <form class="filter-form" action="catalog.html" method="get">
+          <fieldset>
+            <legend>Категория</legend>
+            <label><input type="checkbox" name="category" value="work"> Для работы</label>
+            <label><input type="checkbox" name="category" value="popular"> Популярное</label>
+            <label><input type="checkbox" name="category" value="new"> Новинки</label>
+          </fieldset>
+
+          <div class="filter-form__prices">
+            <div class="form-field">
+              <label for="price-from">Цена от</label>
+              <input id="price-from" name="price-from" type="number" min="0" step="100" placeholder="0">
+            </div>
+            <div class="form-field">
+              <label for="price-to">Цена до</label>
+              <input id="price-to" name="price-to" type="number" min="0" step="100" placeholder="3000">
+            </div>
+          </div>
+
+          <button class="button" type="submit">Применить</button>
+          <a class="button button--secondary" href="catalog.html">Сбросить</a>
+        </form>
+      </aside>
+
+      <section class="catalog-products" aria-labelledby="products-title">
+        <div class="section__heading">
+          <p class="section__eyebrow">Все позиции</p>
+          <h2 id="products-title">Товары каталога</h2>
+          <p>Найдено товаров: 3</p>
+        </div>
+        <div class="products-grid">
         <article class="product-card">
           <div class="product-card__visual product-card__visual--blue" aria-hidden="true">01</div>
           <p class="product-card__tag">Для работы</p>
@@ -72,8 +105,9 @@
           <p class="product-card__price">2 000 ₽</p>
           <a class="button product-card__button" href="contacts.html">Узнать подробнее</a>
         </article>
-      </div>
-    </section>
+        </div>
+      </section>
+    </div>
   </main>
 
   <footer>
