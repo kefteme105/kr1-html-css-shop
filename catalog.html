@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Каталог учебных товаров ShopProject с краткими описаниями и ценами.">
+  <meta property="og:title" content="Каталог — ShopProject">
+  <meta property="og:description" content="Подборка товаров учебного интернет-магазина ShopProject.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://kefteme105.github.io/kr1-html-css-shop/catalog.html">
+  <title>Каталог товаров — ShopProject</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="page-header">
+    <div class="site-header">
+      <a class="site-logo" href="index.html" aria-label="ShopProject — главная страница">
+        Shop<span>Project</span>
+      </a>
+      <nav class="site-nav" aria-label="Основная навигация">
+        <ul class="site-nav__list">
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="catalog.html" aria-current="page">Каталог</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+          <li><a href="index.html#advantages">Преимущества</a></li>
+          <li><a href="index.html#popular">Популярные</a></li>
+          <li><a href="index.html#contacts">Обратная связь</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <nav class="breadcrumbs" aria-label="Хлебные крошки">
+      <ol>
+        <li><a href="index.html">Главная</a></li>
+        <li aria-current="page">Каталог</li>
+      </ol>
+    </nav>
+
+    <section class="inner-hero" aria-labelledby="catalog-title">
+      <p class="section__eyebrow">Учебная витрина</p>
+      <h1 id="catalog-title">Каталог товаров</h1>
+      <p>Три демонстрационные карточки для отработки семантической разметки и единого оформления страниц.</p>
+    </section>
+
+    <section class="section" aria-label="Товары каталога">
+      <div class="product-list">
+        <article class="product-card">
+          <div class="product-card__visual product-card__visual--blue" aria-hidden="true">01</div>
+          <p class="product-card__tag">Для работы</p>
+          <h2>Товар 1</h2>
+          <p>Практичное решение для ежедневных учебных задач.</p>
+          <p class="product-card__price">1 000 ₽</p>
+          <a class="button product-card__button" href="contacts.html">Узнать подробнее</a>
+        </article>
+
+        <article class="product-card">
+          <div class="product-card__visual product-card__visual--green" aria-hidden="true">02</div>
+          <p class="product-card__tag">Популярное</p>
+          <h2>Товар 2</h2>
+          <p>Универсальный вариант с расширенной комплектацией.</p>
+          <p class="product-card__price">1 500 ₽</p>
+          <a class="button product-card__button" href="contacts.html">Узнать подробнее</a>
+        </article>
+
+        <article class="product-card">
+          <div class="product-card__visual product-card__visual--orange" aria-hidden="true">03</div>
+          <p class="product-card__tag">Новинка</p>
+          <h2>Товар 3</h2>
+          <p>Учебный товар для демонстрации карточки каталога.</p>
+          <p class="product-card__price">2 000 ₽</p>
+          <a class="button product-card__button" href="contacts.html">Узнать подробнее</a>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <p><strong>ShopProject</strong></p>
+      <p>&copy; 2026 Учебный проект. Все права защищены.</p>
+      <p>Дисциплина: Фронтенд и бэкенд разработка</p>
+    </div>
+  </footer>
+</body>
+</html>
