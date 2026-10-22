@@ -12,19 +12,19 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header class="page-header">
-    <div class="site-header">
-      <a class="site-logo" href="index.html" aria-label="ShopProject — главная страница">
-        Shop<span>Project</span>
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="site-header__logo" href="index.html" aria-label="ShopProject — главная страница">
+        Shop<span class="site-header__accent">Project</span>
       </a>
       <nav class="site-nav" aria-label="Основная навигация">
         <ul class="site-nav__list">
-          <li><a href="index.html">Главная</a></li>
-          <li><a href="catalog.html">Каталог</a></li>
-          <li><a href="contacts.html" aria-current="page">Контакты</a></li>
-          <li><a href="index.html#advantages">Преимущества</a></li>
-          <li><a href="index.html#popular">Популярные</a></li>
-          <li><a href="index.html#contacts">Обратная связь</a></li>
+          <li class="site-nav__item"><a href="index.html" class="site-nav__link">Главная</a></li>
+          <li class="site-nav__item"><a href="catalog.html" class="site-nav__link">Каталог</a></li>
+          <li class="site-nav__item"><a href="contacts.html" aria-current="page" class="site-nav__link site-nav__link--active">Контакты</a></li>
+          <li class="site-nav__item"><a href="index.html#advantages" class="site-nav__link">Преимущества</a></li>
+          <li class="site-nav__item"><a href="index.html#popular" class="site-nav__link">Популярные</a></li>
+          <li class="site-nav__item"><a href="index.html#contacts" class="site-nav__link">Обратная связь</a></li>
         </ul>
       </nav>
     </div>
@@ -32,52 +32,52 @@
 
   <main>
     <nav class="breadcrumbs" aria-label="Хлебные крошки">
-      <ol>
-        <li><a href="index.html">Главная</a></li>
-        <li aria-current="page">Контакты</li>
+      <ol class="breadcrumbs__list">
+        <li class="breadcrumbs__item"><a href="index.html" class="breadcrumbs__link">Главная</a></li>
+        <li aria-current="page" class="breadcrumbs__item">Контакты</li>
       </ol>
     </nav>
 
     <section class="inner-hero" aria-labelledby="contacts-title">
       <p class="section__eyebrow">Всегда на связи</p>
-      <h1 id="contacts-title">Контакты</h1>
-      <p>Страница связи с автором учебного проекта по фронтенд- и бэкенд-разработке.</p>
+      <h1 id="contacts-title" class="inner-hero__title">Контакты</h1>
+      <p class="inner-hero__text">Страница связи с автором учебного проекта по фронтенд- и бэкенд-разработке.</p>
     </section>
 
     <section class="section contact-layout" aria-label="Контактная информация">
       <article class="contact-card">
         <p class="section__eyebrow">Автор проекта</p>
-        <h2>Хамидов Дамир Маъруфович</h2>
+        <h2 class="contact-card__title">Хамидов Дамир Маъруфович</h2>
         <dl class="contact-list">
-          <div>
-            <dt>Учебная группа</dt>
-            <dd>ЭФБО-17-25</dd>
+          <div class="contact-list__row">
+            <dt class="contact-list__term">Учебная группа</dt>
+            <dd class="contact-list__value">ЭФБО-17-25</dd>
           </div>
-          <div>
-            <dt>Электронная почта</dt>
-            <dd><a href="mailto:Dachnikdd@gmail.com">Dachnikdd@gmail.com</a></dd>
+          <div class="contact-list__row">
+            <dt class="contact-list__term">Электронная почта</dt>
+            <dd class="contact-list__value"><a href="mailto:Dachnikdd@gmail.com" class="contact-list__link">Dachnikdd@gmail.com</a></dd>
           </div>
-          <div>
-            <dt>GitHub</dt>
-            <dd><a href="https://github.com/kefteme105">github.com/kefteme105</a></dd>
+          <div class="contact-list__row">
+            <dt class="contact-list__term">GitHub</dt>
+            <dd class="contact-list__value"><a href="https://github.com/kefteme105" class="contact-list__link">github.com/kefteme105</a></dd>
           </div>
         </dl>
       </article>
 
       <aside class="contact-note">
         <p class="section__eyebrow">Обратная связь</p>
-        <h2>Есть вопрос по товару?</h2>
-        <p>Перейдите на главную страницу, выберите товар и отправьте заявку через форму.</p>
+        <h2 class="contact-note__title">Есть вопрос по товару?</h2>
+        <p class="contact-note__text">Перейдите на главную страницу, выберите товар и отправьте заявку через форму.</p>
         <a class="button" href="index.html#popular">Выбрать товар</a>
       </aside>
     </section>
   </main>
 
-  <footer>
-    <div class="footer-content">
-      <p><strong>ShopProject</strong></p>
-      <p>&copy; 2026 Учебный проект. Все права защищены.</p>
-      <p>Дисциплина: Фронтенд и бэкенд разработка</p>
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <p class="site-footer__text"><strong class="site-footer__brand">ShopProject</strong></p>
+      <p class="site-footer__text">© 2026 Учебный проект. Все права защищены.</p>
+      <p class="site-footer__text">Дисциплина: Фронтенд и бэкенд разработка</p>
     </div>
   </footer>
 </body>
