@@ -35,6 +35,9 @@ document.querySelectorAll('.order-form').forEach((form) => {
   form.addEventListener('input', (event) => event.target.removeAttribute('aria-invalid'));
   form.addEventListener('submit', (event) => {
     event.preventDefault();
+    const message = form.id === 'page-order-form'
+      ? document.getElementById('page-success-message') : successMessage;
+    message.hidden = true;
     const fields = Array.from(form.elements).filter((field) => field.willValidate);
     fields.forEach((field) => field.removeAttribute('aria-invalid'));
     if (!form.checkValidity()) {
@@ -43,8 +46,6 @@ document.querySelectorAll('.order-form').forEach((form) => {
       form.reportValidity();
       return;
     }
-    const message = form.id === 'page-order-form'
-      ? document.getElementById('page-success-message') : successMessage;
     message.hidden = false;
     form.reset();
     if (form.closest('dialog')) orderDialog.close();
