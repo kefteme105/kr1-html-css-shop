@@ -11,7 +11,7 @@
   <title>Каталог товаров — ShopProject</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body id="top">
   <header class="site-header">
     <div class="site-header__inner">
       <a class="site-header__logo" href="index.html" aria-label="ShopProject — главная страница">
@@ -19,13 +19,7 @@
       </a>
       <nav class="site-nav" aria-label="Основная навигация">
         <ul class="site-nav__list">
-          <li class="site-nav__item"><a href="index.html" class="site-nav__link">Главная</a></li>
-          <li class="site-nav__item"><a href="catalog.html" aria-current="page" class="site-nav__link site-nav__link--active">Каталог</a></li>
-          <li class="site-nav__item"><a href="contacts.html" class="site-nav__link">Контакты</a></li>
-          <li class="site-nav__item"><a href="index.html#advantages" class="site-nav__link">Преимущества</a></li>
-          <li class="site-nav__item"><a href="index.html#popular" class="site-nav__link">Популярные</a></li>
-          <li class="site-nav__item"><a href="index.html#contacts" class="site-nav__link">Обратная связь</a></li>
-        </ul>
+          <li class="site-nav__item"><a class="site-nav__link" href="index.html">Главная</a></li><li class="site-nav__item"><a class="site-nav__link site-nav__link--active" href="catalog.html" aria-current="page">Каталог</a></li><li class="site-nav__item"><a class="site-nav__link" href="product.html">Товары</a></li><li class="site-nav__item"><a class="site-nav__link" href="order.html">Заявка</a></li><li class="site-nav__item"><a class="site-nav__link" href="contacts.html">Контакты</a></li><li class="site-nav__item"><a class="site-nav__link" href="index.html#popular">Популярные</a></li></ul>
       </nav>
     </div>
   </header>
@@ -49,7 +43,7 @@
         <p class="section__eyebrow">Параметры</p>
         <h2 id="filters-title" class="catalog-filters__title">Фильтры</h2>
         <form class="filter-form" action="catalog.html" method="get">
-          <fieldset class="filter-form__group">
+          <p class="filter-form__note">Макет фильтров: подбор товаров появится на этапе JavaScript.</p><fieldset class="filter-form__group">
             <legend class="filter-form__legend">Категория</legend>
             <label class="filter-form__label"><input type="checkbox" name="category" value="work"> Для работы</label>
             <label class="filter-form__label"><input type="checkbox" name="category" value="popular"> Популярное</label>
@@ -67,7 +61,7 @@
             </div>
           </div>
 
-          <button class="button" type="submit">Применить</button>
+          <button class="button" type="submit" disabled>Применить</button>
           <a class="button button--secondary" href="catalog.html">Сбросить</a>
         </form>
       </aside>
@@ -80,30 +74,30 @@
         </div>
         <div class="products-grid products-grid--catalog">
         <article class="product-card">
-          <div class="product-card__visual product-card__visual--work" aria-hidden="true">01</div>
+          <span class="product-card__badge">Хит</span><div class="product-card__visual product-card__visual--work" aria-hidden="true">01</div>
           <p class="product-card__tag">Для работы</p>
-          <h2 class="product-card__title">Товар 1</h2>
+          <h2 class="product-card__title"><a href="product.html#product-1" class="product-card__link">Товар 1</a></h2>
           <p class="product-card__description">Практичное решение для ежедневных учебных задач.</p>
           <p class="product-card__price">1 000 ₽</p>
-          <a class="button product-card__button" href="contacts.html">Узнать подробнее</a>
+          <a class="button product-card__button" href="product.html#product-1">Узнать подробнее</a>
         </article>
 
         <article class="product-card">
-          <div class="product-card__visual product-card__visual--popular" aria-hidden="true">02</div>
+          <span class="product-card__badge">Хит</span><div class="product-card__visual product-card__visual--popular" aria-hidden="true">02</div>
           <p class="product-card__tag">Популярное</p>
-          <h2 class="product-card__title">Товар 2</h2>
+          <h2 class="product-card__title"><a href="product.html#product-2" class="product-card__link">Товар 2</a></h2>
           <p class="product-card__description">Универсальный вариант с расширенной комплектацией.</p>
           <p class="product-card__price">1 500 ₽</p>
-          <a class="button product-card__button" href="contacts.html">Узнать подробнее</a>
+          <a class="button product-card__button" href="product.html#product-2">Узнать подробнее</a>
         </article>
 
         <article class="product-card">
-          <div class="product-card__visual product-card__visual--new" aria-hidden="true">03</div>
+          <span class="product-card__badge">Новинка</span><div class="product-card__visual product-card__visual--new" aria-hidden="true">03</div>
           <p class="product-card__tag">Новинка</p>
-          <h2 class="product-card__title">Товар 3</h2>
+          <h2 class="product-card__title"><a href="product.html#product-3" class="product-card__link">Товар 3</a></h2>
           <p class="product-card__description">Учебный товар для демонстрации карточки каталога.</p>
           <p class="product-card__price">2 000 ₽</p>
-          <a class="button product-card__button" href="contacts.html">Узнать подробнее</a>
+          <a class="button product-card__button" href="product.html#product-3">Узнать подробнее</a>
         </article>
         </div>
       </section>
@@ -117,5 +111,5 @@
       <p class="site-footer__text">Дисциплина: Фронтенд и бэкенд разработка</p>
     </div>
   </footer>
-</body>
+<a class="back-to-top" href="#top" aria-label="Вернуться наверх">↑ Наверх</a></body>
 </html>

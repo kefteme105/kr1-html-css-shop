@@ -11,7 +11,7 @@
   <title>Контакты — ShopProject</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body id="top">
   <header class="site-header">
     <div class="site-header__inner">
       <a class="site-header__logo" href="index.html" aria-label="ShopProject — главная страница">
@@ -19,13 +19,7 @@
       </a>
       <nav class="site-nav" aria-label="Основная навигация">
         <ul class="site-nav__list">
-          <li class="site-nav__item"><a href="index.html" class="site-nav__link">Главная</a></li>
-          <li class="site-nav__item"><a href="catalog.html" class="site-nav__link">Каталог</a></li>
-          <li class="site-nav__item"><a href="contacts.html" aria-current="page" class="site-nav__link site-nav__link--active">Контакты</a></li>
-          <li class="site-nav__item"><a href="index.html#advantages" class="site-nav__link">Преимущества</a></li>
-          <li class="site-nav__item"><a href="index.html#popular" class="site-nav__link">Популярные</a></li>
-          <li class="site-nav__item"><a href="index.html#contacts" class="site-nav__link">Обратная связь</a></li>
-        </ul>
+          <li class="site-nav__item"><a class="site-nav__link" href="index.html">Главная</a></li><li class="site-nav__item"><a class="site-nav__link" href="catalog.html">Каталог</a></li><li class="site-nav__item"><a class="site-nav__link" href="product.html">Товары</a></li><li class="site-nav__item"><a class="site-nav__link" href="order.html">Заявка</a></li><li class="site-nav__item"><a class="site-nav__link site-nav__link--active" href="contacts.html" aria-current="page">Контакты</a></li><li class="site-nav__item"><a class="site-nav__link" href="index.html#popular">Популярные</a></li></ul>
       </nav>
     </div>
   </header>
@@ -71,7 +65,7 @@
         <a class="button" href="index.html#popular">Выбрать товар</a>
       </aside>
     </section>
-  </main>
+  <p class="section"><a class="button" href="order.html">Обратная связь — заполнить заявку</a></p></main>
 
   <footer class="site-footer">
     <div class="site-footer__inner">
@@ -80,5 +74,5 @@
       <p class="site-footer__text">Дисциплина: Фронтенд и бэкенд разработка</p>
     </div>
   </footer>
-</body>
+<a class="back-to-top" href="#top" aria-label="Вернуться наверх">↑ Наверх</a></body>
 </html>
